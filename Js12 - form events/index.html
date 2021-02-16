@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .box{
+      background-color: lime;
+    }
+    
+  </style>
+</head>
+<body>
+
+<h1>jayk javascript</h1>
+
+<form class="uform">
+  username:
+  <input class="input" type="username" >
+  education:
+  <input class="text" type="text"><br>
+  
+ state: <select class="uselect">
+    <option>Delhi</option>
+    <option>Banglore</option>
+    <option>Mumbai</option>
+    <option>UP</option>
+    <option>Haryana</option>
+  </select><br>
+  
+  <input type="submit">
+  
+</form>
+
+<p class="test"></p>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+
+<script>
+  
+  $(document).ready(function(){
+    
+    $('.input, .text, .uselect').focus(function(){
+      $(this).css('background-color','lime');
+    });
+    $('.input, .text, .uselect').blur(function(){
+      $(this).css('background-color','white');
+    });
+    
+    $('.uselect').change(function(){
+      $('.test').text($(this).val());
+    });
+    
+    $('.input, .text').select(function(){
+      alert('dont do that'); //when selecttext for copying
+    });
+    
+    $('.uform').submit(function(){
+      alert('form submitted')
+    });
+  
+    
+  });
+  
+</script>
+
+</body>
+</html> 

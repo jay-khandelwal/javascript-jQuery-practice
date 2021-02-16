@@ -1,0 +1,54 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+/*
+.image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: tomato;
+  margin: 0.4rem
+}
+
+.image-gallery .main-image{
+  width: 90%;
+}
+
+.image-gallery .main-image img{
+  width: 100%;
+  max-height: 30rem;
+  min-height: 8rem;
+  height: auto;
+}*/
+
+
+.image-gallery{
+  width: 90%;
+}
+
+.image-gallery .main-image{
+ margin: 0.6rem;
+}
+
+.image-gallery .main-image img{
+  width: 100%;
+  max-height: 30rem;
+/*  min-height: 4rem;*/
+  height: auto;
+}
+
+.image-gallery .thumbnail-image {
+  margin: 0.6rem;
+}
+
+.image-gallery .thumbnail-image img{
+  display: inline;
+  width:23%;
+  max-height: 10rem;
+  height: auto;
+}
+
+
+

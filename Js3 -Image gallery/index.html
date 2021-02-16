@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  Effects: <select id="effects">
+    <option value="fade">fade</option>
+    <option value="slide">slide</option>
+  </select>
+
+  Duration: <select id="duration">
+    <option value=0.5>0.5</option>
+    <option value=1>1</option>
+    <option value=1.5>1.5</option>
+    <option value=2>2</option>
+    <option value=2.5>2.5</option>
+    <option value=3>3</option>
+  </select>  
+  
+  <input type="button" id="zoomOut" value="ZoomOut">
+  <input type="button" id="zoomIn" value="ZoomIn">
+  
+  <div class="image-gallery">
+    
+    <div class="main-image">
+      <img src="images/1.jpeg">
+    </div>
+    <div class="thumbnail-image" >
+      <img src="images/1.jpeg">
+      <img src="images/2.jpeg">
+      <img src="images/3.jpeg">
+      <img src="images/4.jpeg">
+   
+    </div>
+    
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+<script src="main.js" ></script>
+</body>
+</html> 

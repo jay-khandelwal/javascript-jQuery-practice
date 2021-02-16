@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .box{
+      background-color: lime;
+    }
+    
+  </style>
+</head>
+<body>
+
+<h1>jayk javascript</h1>
+<div class="box">
+  <h2>box class</h2>
+  <p>free it books,computer books free download,information technology pdf books free download,computer science books free download pdf,free computer science books,all it books,free tech books,computer pdf books free download,onlinefreeebooks,ebooks dl,foxebook,tech books,ebook search engine,ebooks and text archives,microsoft</p>
+</div>
+
+<button class="removebtn">remove</button>
+<button class="emptybtn">empty</button>
+
+<p class="test"></p>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+
+<script>
+  
+  $(document).ready(function(){
+    
+    var a = $('.box p');
+    $('.removebtn').click(function(){
+      a.remove();
+    });
+    $('.emptybtn').click(function(){
+      a.empty();
+    });    
+    
+  });
+  
+</script>
+
+</body>
+</html> 
